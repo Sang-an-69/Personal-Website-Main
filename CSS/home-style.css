@@ -4,6 +4,7 @@ body {
     margin-right: 5%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(220, 220, 220);
+    margin: 0px;
 }
 
 ul, ol {
@@ -15,10 +16,11 @@ ul, ol {
     text-align: center;
 }
 
-.top_navbar {
+/*.top_navbar {
     overflow: hidden;
     background-color: cyan;
-    padding: 5px;
+    padding: 3px;
+    margin-bottom: 10px;
 }
 
 .top_navbar a {
@@ -37,4 +39,55 @@ ul, ol {
 
 .top_navbar a.active {
     background-color: red;
+}*/
+
+.sidebar {
+    width: 160px; 
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #111;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 26px;
+    display: block;
+    padding: 6px 8px 6px 16px;
+}
+
+.sidebar img {
+    margin-right: 5px;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+}
+
+.sidebar a:link {
+    color: white;
+}
+
+.sidebar a:visited {
+    color: white;
+}
+
+.sidebar a:hover{
+    background-color: grey;
+    color: white;
+    border-bottom: 3px solid white
+}
+
+.content {
+    margin-left: 180px; 
+    padding: 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
